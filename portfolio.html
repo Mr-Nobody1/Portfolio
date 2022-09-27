@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div id="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm Ammad <span>Ali</span> <br> From  Pakistan</h1>
+        </div>
+        
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.png" alt=""></div>
+                <div class="about-col-2"> 
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit am</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Site Developmwnt</li>
+                            <li><span>Web App</span><br>Web App Developmwnt</li>
+                            <li><span>Discord Mod</span><br>Discord Server Management</li>
+                            <li><span>Disocrd Bots</span><br>Discord Bots Developmwnt</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2021</span><br>Nasa-kun</li>
+                            <li><span>2020-2021</span><br>Apple-kun</li>
+                            <li><span>2019-2020</span><br>Google-kun</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graguated 2021</span><br>UET Taxilla, Pakistan</li>
+                         
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+    
+        </div>
+    
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+var tabContents = document.getElementsByClassName("tab-contents");
+
+function opentab (tabname){
+    for(tablink of tablinks){
+        document.getElementsByClassName.remove("active-link");
+
+        
+    }
+    for (tabcontent of tabcontents){
+        document.getElementsByClassName.remove("active-tab")
+    }
+}
+</script>
+
+    
+</body>
+</html>
